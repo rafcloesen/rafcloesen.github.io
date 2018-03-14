@@ -1,44 +1,110 @@
-<html>
+<!doctype html>
+<html lang="en">
+
     <head>
-        <title> E-portfolio: Raf Cloesen </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <title>Portfolio Raf Cloesen</title>
+
+        <style>
+            body {
+                background-color: #1e2320;
+                color: #dcdccc;
+            }
+            .jumbotron {
+                background-color: #333333;
+            }
+            .border {
+                border: 1px solid #dcdccc !important;
+            }
+            .border-left {
+                border-left: 1px solid #dcdccc !important;
+            }
+            .border-right {
+                border-right: 1px solid #dcdccc !important;
+            }
+            a:link {
+                color: #709080;
+            }
+            a:visited {
+                color: #8f8f8f;
+            }
+            a:hover {
+                color: #ffcfaf;
+            }
+            a:active {
+                color: #cc9393;
+            }
+            h4 {
+                color: #cc9393;
+            }
+            h5 {
+                color: #ecbcbc;
+            }
+            .card-footer {
+                font-size: 0.75rem;
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
-        <h1> E-portfolio: Raf Cloesen </h1>
-        <section>
-            <h2> Over mij </h2>
-            <p>Ik ben huidig een student aan de UCLL met Leuven als
-            hoofdverblijfplaats.</p>
-        </section>
-        <section>
-            <h2> Vaardigheden </h2>
-            <ul>
-                <li> GNU/Linux besturingssystemen </li>
-                <li> Java </li>
-                <li> Javascript </li>
-                <li> ReactJS </li>
-                <li> Redux </li>
-                <li> Python </li>
-            </ul>
-        </section>
-        <section>
-            <h2> Projecten </h2>
-            <ul>
-                <li> TODO: website webontwerp </li>
-                <li> Hobby project: https://github.com/RFmind/habits.git </li>
-                <li> Willekeurige mensen helpen met willekeurige
-                    computergebonden problemen </li>
-            </ul>
-        </section>
-        <section>
-            <h2> Curriculum Vitae </h2>
-            <a href="#">TODO: upload CV</a>
-            <h5>Tijdelijke CV:</h5>
-            <object data="tijdelijke-CV.pdf" style="width: 85%; height: 50%">
-            </object>
-        </section>
-        <section>
-            <h2> Contactgegevens </h2>
-            <p>rafcloesen@gmail.com</p>
-        </section>
+        <!-- Header -->
+        <div class="jumbotron">
+            <div class="row">
+                <img src="img/profile-picture.jpg" class="mx-auto border" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;"/>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Raf Cloesen Portfolio</h2>
+                    <ul style="display: inline-block;text-align: left;list-style-type: none;padding: 0;margin: 0;">
+                        <li><a href="https://github.com/rafcloesen">Github Profiel</a></li>
+                        <li><a href="tijdelijke-CV.pdf">Curriculum Vitae</a></li>
+                        <li><a href="mailto:rafcloesen@gmail.com">rafcloesen@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="container">
+            <div class="row border-right border-left">
+                <div class="col-8">
+                    <h4>Over Mij</h4>
+                    <p>Huidig studeer ik toegepaste informatica. In mijn jeugd heb ik voornamelijk zitten prutsen met GNU/Linux systemen. Ik heb ervaring met een groote variatie aan programeer talen.</p>
+                </div>
+
+                <div class=" border-left col-4">
+                    <h4>Vaardigheden</h4>
+                    <ul>
+                        <li>GNU/Linux</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>ReactJs</li>
+                        <li>Redux</li>
+                        <li>Python</li>
+                    <ul>
+                </div>
+            </div>
+            <div class="row border-left border-right">
+                <div class="col">
+                    <h4>Projecten</h4>
+                    <div class="row">
+                        <div class="col">
+                            <h5><strong>Habits Tracker Project</strong></h5>
+                            <p>Een applicatie bestaande uit een backend geschreven in Python+Flask+Postgres en een frontend geschreven in JavaScript+ReactJs+Redux. Deployment gebeurt via wercker continious integration.<br/><a href="https://github.com/rfmind/habits">Github repository</a></p>
+                        </div>
+                        <div class="col">
+                            <h5><strong>Webontwerp Project</strong></h5>
+                            <p>Een project voor het vak Webontwerp met als bedoeling om een dynamische website te maken met Java Servlets en HTML.</p>
+                        </div>
+                        <div class="col">
+                            <h5><strong>Virtualisatie Project</strong></h5>
+                            <p>Een desktop virtualisatie systeem gebasseerd op Arch Linux en Qemu dat PCI passthrough naar een Windows 7 virtueel machine gebruikt. De image van het virtueel systeem is zowel virtueel (op een Arch Linux host) als bare-metal te booten.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="card-footer mt-4">Copyright &copy 2018 Raf Cloesen</footer>
     </body>
 </html>
